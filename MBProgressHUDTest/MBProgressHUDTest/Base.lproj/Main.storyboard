@@ -12,19 +12,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B3X-h5-FmW">
-                                <rect key="frame" x="137" y="262" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BIj-AP-r7q">
-                                <rect key="frame" x="137" y="262" width="46" height="30"/>
+                                <rect key="frame" x="35" y="40" width="236" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.26914838940000002" green="0.69019607839999997" blue="0.37888209909999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="别人封装后的MBProgressHUD使用"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHZ-O6-T1n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B3X-h5-FmW">
+                                <rect key="frame" x="13" y="78" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="原生MBProgressHUD的使用"/>
+                                <connections>
+                                    <action selector="sourceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="faN-nu-Wkj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -34,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="267.73333333333335" y="328.01999999999998"/>
+            <point key="canvasLocation" x="267" y="328"/>
         </scene>
     </scenes>
 </document>

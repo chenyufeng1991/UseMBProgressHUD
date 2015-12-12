@@ -49,9 +49,9 @@ typedef enum {
 } MBProgressHUDMode;
 
 typedef enum {
-	/** Opacity animation */
+	//透明度动画；
 	MBProgressHUDAnimationFade,
-	/** Opacity + scale animation */
+  //透明度动画+缩放动画；
 	MBProgressHUDAnimationZoom,
 	MBProgressHUDAnimationZoomOut = MBProgressHUDAnimationZoom,
 	MBProgressHUDAnimationZoomIn
