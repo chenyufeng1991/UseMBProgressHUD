@@ -62,8 +62,9 @@
 - (IBAction)sourceButtonPressed:(id)sender {
 
 
-  //原生；
+  //声明对象；
   MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:true];
+  //显示的文本；
   hud.labelText = @"正在加载";
 
   AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -77,13 +78,15 @@
          NSLog(@"成功: %@", string);
 
 
+         //加载成功，先移除原来的HUD；
          hud.removeFromSuperViewOnHide = true;
          [hud hide:true afterDelay:0];
 
-         //如果加载成功，则显示提示；
+         //然后显示一个成功的提示；
          MBProgressHUD *successHUD = [MBProgressHUD showHUDAddedTo:self.view animated:true];
          successHUD.labelText = @"加载成功";
          successHUD.mode = MBProgressHUDModeCustomView;
+         //可以设置对应的图片；
          successHUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"success"]];
          successHUD.removeFromSuperViewOnHide = true;
          [successHUD hide:true afterDelay:1];
@@ -94,7 +97,7 @@
          hud.removeFromSuperViewOnHide = true;
          [hud hide:true afterDelay:0];
 
-         //如果加载成功，则显示提示；
+         //显示失败的提示；
          MBProgressHUD *failHUD = [MBProgressHUD showHUDAddedTo:self.view animated:true];
          failHUD.labelText = @"加载失败";
          failHUD.mode = MBProgressHUDModeCustomView;
